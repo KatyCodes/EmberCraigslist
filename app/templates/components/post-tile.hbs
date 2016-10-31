@@ -1,0 +1,9 @@
+<div class="tile post">
+  <li>
+    {{post.date}}
+    {{#link-to 'post' post.id}}
+      {{post.title}}
+    {{/link-to}}
+    ${{post.price}}
+  </li>
+</div>

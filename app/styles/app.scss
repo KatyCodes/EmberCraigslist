@@ -1,0 +1,24 @@
+body {
+  background-color: mistyrose;
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: lavenderblush;
+  color: mistyrose;
+  text-shadow: 0 0 15px rebeccapurple;
+}
+
+.tile {
+  border: 1px solid fuchsia;
+  background-color: rgba(0,0,0,0.2);
+  padding: 2rem;
+  margin: 2rem;
+}

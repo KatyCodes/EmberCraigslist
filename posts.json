@@ -1,0 +1,27 @@
+{
+  "posts": [{
+    "author": "Veruca Salt",
+    "content": "San Francisco",
+    "title": "Estate",
+    "price": 15,
+    "location": "portland",
+    "date": "October 31st",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+  }, {
+    "author": "Mike Teavee",
+    "content": "Seattle",
+    "title": "Condo",
+    "price": 1,
+    "location": "portland",
+    "date": "October 31st",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"
+  }, {
+    "author": "Violet Beauregarde",
+    "content": "Portland",
+    "title": "Apartment",
+    "price": 3,
+    "location": "portland",
+    "date": "October 31st",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
+  }]
+}
