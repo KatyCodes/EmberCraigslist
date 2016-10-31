@@ -29,6 +29,7 @@
       <label for="date">Date</label>
       {{input type="date" value=date id="date"}}
     </div>
+    <button {{action 'saveNewPost1'}}>save post</button>
   </form>
 {{else}}
   <button {{action 'openPostAdd'}}>post to classifieds</button>
