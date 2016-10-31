@@ -20,6 +20,10 @@ export default Ember.Route.extend({
       newPost.save().then(function() {
         return post.save();
       });
+    },
+    deletePost5(post) {
+      post.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });

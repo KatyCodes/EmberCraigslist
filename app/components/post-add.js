@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         title: this.get('title'),
         image: this.get('image'),
-        price: this.get('price')),
+        price: this.get('price'),
         location: this.get('location'),
         date: this.get('date'),
       };
