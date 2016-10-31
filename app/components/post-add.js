@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   addPostOpen: false,
@@ -17,9 +18,9 @@ export default Ember.Component.extend({
         image: this.get('image'),
         price: this.get('price'),
         location: this.get('location'),
-        date: this.get('date'),
+        date: moment().valueOf(),
       };
-      if(params.author && params.content && params.title && params.image && params.price && params.location && params.date) {
+      if(params.author && params.content && params.title && params.image && params.price && params.location) {
         this.set('addPostOpen', false);
         this.sendAction('saveNewPost2', params);
       }
@@ -32,7 +33,6 @@ export default Ember.Component.extend({
       this.set('image', "");
       this.set('price', "");
       this.set('location', "");
-      this.set('date', "");
-    }
+    },
   }
 });

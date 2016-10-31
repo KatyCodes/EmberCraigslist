@@ -17,7 +17,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
         price: this.get('price'),
         location: this.get('location'),
-        date: this.get('date'),
+        date: moment().valueOf(),
       };
       this.set('postUpdateOpen', false);
       this.sendAction('updatePost2', post, params);
@@ -28,7 +28,6 @@ export default Ember.Component.extend({
       this.set('image', "");
       this.set('price', "");
       this.set('location', "");
-      this.set('date', "");
     }
   }
 });

@@ -23,7 +23,7 @@ export default Ember.Route.extend({
     },
     deletePost5(post) {
       post.destroyRecord();
-      this.transitionTo('index');
+      this.transitionTo('indexß≈');
     }
   }
 });
