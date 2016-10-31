@@ -1,4 +1,4 @@
-<h1>{{post.title}}{{post.price}}</h1>
+<h1>{{post.title}}   ${{post.price}}</h1>
 <div class="well">
   <img src={{post.image}}>
 </div>
@@ -8,3 +8,5 @@
   {{post.date}}
   {{post.location}}
 </p>
+
+{{post-update post=post updatePost2="updatePost3"}}

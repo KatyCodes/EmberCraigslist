@@ -1,31 +1,27 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addPostOpen: false,
+  postUpdateOpen: false,
   actions: {
-    openPostAdd() {
-      this.set('addPostOpen', true);
+    openPostUpdate() {
+      this.set('postUpdateOpen', true);
     },
-    closePostAdd() {
-      this.set('addPostOpen', false);
+    closePostUpdate() {
+      this.set('postUpdateOpen', false);
     },
-    saveNewPost1 () {
-      var params ={
+    updatePost1(post) {
+      var params = {
         author: this.get('author'),
         content: this.get('content'),
         title: this.get('title'),
         image: this.get('image'),
-        price: this.get('price')),
+        price: this.get('price'),
         location: this.get('location'),
         date: this.get('date'),
       };
-      if(params.author && params.content && params.title && params.image && params.price && params.location && params.date) {
-        this.set('addPostOpen', false);
-        this.sendAction('saveNewPost2', params);
-      }
-      else {
-        alert("All fields are required to submit a new post.");
-      }
+      this.set('postUpdateOpen', false);
+      this.sendAction('updatePost2', post, params);
+
       this.set('author', "");
       this.set('content', "");
       this.set('title', "");
